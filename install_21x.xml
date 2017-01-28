@@ -2,7 +2,7 @@
 <!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>SleePy:alias_board</id>
-<version>2.4</version>
+<version>2.5</version>
 
 <file name="$sourcedir/BoardIndex.php">
 	<operation>
@@ -235,7 +235,7 @@ function isInteger($input){
 		<search position="replace"><![CDATA[SET id_last_msg = {int:id_last_msg}, id_msg_updated = {int:id_msg_updated}
 			WHERE id_board IN ({array_int:board_list})',]]></search>
 		<add><![CDATA[SET id_last_msg = {int:id_last_msg}, id_msg_updated = {int:id_msg_updated}
-			WHERE (id_board IN ({array_int:board_list}) OR (alias_board IN ({array_int:board_list}))',]]></add>
+			WHERE (id_board IN ({array_int:board_list}) OR (alias_board IN ({array_int:board_list})))',]]></add>
 	</operation>
 </file>
 <file name="$themedir/ManageBoards.template.php">

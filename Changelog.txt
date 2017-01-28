@@ -1,3 +1,7 @@
+v2.5 - January 28th, 2017
+o Fixed error that occurs when creating a new post.
+o Add a LICENSE file for the current license, 2-clause BSD.
+
 v2.4 - April 19th, 2016
 o Fixed several undefined element errors when used in conjunction with Split Forum mod.
 
